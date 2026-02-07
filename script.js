@@ -42,42 +42,42 @@
 // else{   
 //     console.log("Sizga energetik sotilmaydi!");
 // }
-var name = prompt("Ismingizni kiriting")
-if( namelength = 10){
-    console.log(army);
-}
-else{
-    console.log("yoq");
-}
+// var name = prompt("Ismingizni kiriting")
+// if( namelength = 10){
+//     console.log(army);
+// }
+// else{
+//     console.log("yoq");
+// }
 
-var army = prompt("Yoshingizni kiriting"). trim();
-if ( army > 18 && army < 28) {
-    console.log("yaxshi");
+// var army = prompt("Yoshingizni kiriting"). trim();
+// if ( army > 18 && army < 28) {
+//     console.log("yaxshi");
     
-}
-else {
-    console.log( "Yoshingiz to'g'ri kelmaydi!" );
-}
+// }
+// else {
+//     console.log( "Yoshingiz to'g'ri kelmaydi!" );
+// }
 
-var gender = prompt("Jinsingizni kiriting")
-if (gender == "erkak") {  
-    console.log("Yaxshi");
+// var gender = prompt("Jinsingizni kiriting")
+// if (gender == "erkak") {  
+//     console.log("Yaxshi");
       
-}
-else{
-    console.log( "Faqat erkaklar armiyaga boradi" );
-}
+// }
+// else{
+//     console.log( "Faqat erkaklar armiyaga boradi" );
+// }
 
-var goarmy = prompt("Oldin armiyaga borganmisiz")
-var  noarmy = "Siz armiyaga bora olmaysiz"
-if ( goarmy == "ha") {
-    console.log("Armiyaga borishingiz shart emas");
+// var goarmy = prompt("Oldin armiyaga borganmisiz")
+// var  noarmy = "Siz armiyaga bora olmaysiz"
+// if ( goarmy == "ha") {
+//     console.log("Armiyaga borishingiz shart emas");
     
-}
-else{
-    console.log("Siz armiyaga ertadan borasiz");
+// }
+// else{
+//     console.log("Siz armiyaga ertadan borasiz");
     
-}
+// }
 // if ( goarmy == "yoq") {
 //     console.log("Siz armiyaga ertadan borasiz");
 // }
@@ -96,3 +96,52 @@ else{
 
 
 //  
+// var phone = prompt("Enter your phone").trim();
+// var city = prompt("Enter your liked city").trim();
+// console.log(
+// `Siz 
+//     ${phone} 
+//     shundan
+//      foydalanasiz,  
+//       va
+//        ${city}
+//         borgiz
+//          keladi
+//           `);
+
+//           let broken = "Hello \uD800";
+
+// let fixed = broken.toWellFormed();
+// console.log(fixed);
+// // "Hello �"
+// function safeText(text) {
+//   return text.isWellFormed() ? text : text.toWellFormed();
+// }
+
+// console.log(safeText("Salom 😄"));
+// console.log(safeText("Salom \uD800"));
+
+
+
+var kalkuliyator1 = +prompt("Birinchi raqamni kiriting").trim();
+
+var kalkuliyator2 = prompt("Amalni kritin? Misol uchun: +, -, *, /").trim();
+
+var kalkuliyator3 = +prompt("Endi 2-raqamini kiriting").trim()
+
+var result;
+if( kalkuliyator2 === "+"){
+  result = kalkuliyator1 + kalkuliyator3;
+} else if ( kalkuliyator2 === "-"){
+  result = kalkuliyator1 - kalkuliyator3;
+} else if ( kalkuliyator2 === "*"){
+  result = kalkuliyator1 * kalkuliyator3;
+} else if( kalkuliyator2 === "/"){
+  result = kalkuliyator1 / kalkuliyator3;
+} else{
+  alert("Bu xato faqat sonlardi kiritish kerek")
+}
+
+if (result !== undefined) {
+  alert("Javobi: " + result);
+}
